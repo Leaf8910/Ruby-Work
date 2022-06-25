@@ -1,0 +1,108 @@
+#Converting floats to integers
+13.to_f #=> 13.0
+
+# To oonveret integer to float
+13.0.to_i #=> 13
+13.9.to_i #=> 13
+
+# Useful Number Methods
+6.even? #=> true
+7.even? #=> false
+
+6.odd? #=> false
+
+#String literals
+#With the plus operator 
+"Welcome " + "to" + "Odin Project!" #=> "Welcome to Odin Project!"
+
+#With the shovel operator
+"Welcome " << "to " << "Odin!"  #=> "Welcome to Odin!"
+
+#With the Concat
+"Welcome ".concat("to ").concat("Odin!") #=> "Welcome to Odin!"
+
+#Substrings
+
+"hello"[0] #=> "h"
+
+"hello"[0..1] #=> "he"
+
+"hello"[0,4]  #=> "hell"
+
+"hello"[-1] #=> "o"
+
+#Interpolaration  or f-string in python
+name = "Odin"
+puts "Hello, #{name}" #=> "Hello, Odin"
+
+#capitalize 
+"hello".capitalize #=> "Hello"
+
+#include
+"hello".include("lo") #=> True
+"hello".include("z") #=> False
+
+#upcase
+"hello".upcase #=> "HELLO"
+#downcase 
+"Hello".downcase #=> "hello"
+
+#empty?
+"hello".empty? #=> false
+"".empty? #=> true
+
+#length
+"hello".length #=> 5
+#reverse
+"hello".reverse #=> "olleh"
+#split 
+"hello world".split #=> ["hello", "world"]
+#strip
+"hello,world    ".strip #=> "hello, world"
+
+"he77o".sub("7", "l")           #=> "hel7o"
+
+"he77o".gsub("7", "l")          #=> "hello"
+
+"hello".insert(-1, " dude")     #=> "hello dude"
+
+"hello world".delete("l")       #=> "heo word"
+
+"!".prepend("hello, ", "world") #=> "hello, world!"
+
+#Converting Objects to strings
+5.to_s #=> "5"
+nill.to_s #=> ""
+:symbol.to_s #=> "symbol"
+
+#symbol 
+:my_symbol
+
+#symbols vs strings
+"string" == "string" #=> true
+"string".object_id == "string".object_id #=> false
+:symbol.object_id == :symbol.object_id #=> true
+
+https://launchschool.com/books/ruby/read/basics
+
+#using hash to store list of movies the year they came out
+movies = { jaws: 1975,
+    anchorman: 2004,
+    man_of_steel: 2013,
+    a_beautiful_mind: 2001,
+    the_evil_dead: 1981 }
+
+puts movies[:jaws]
+puts movies[:anchorman]
+puts movies[:man_of_steel]
+puts movies[:a_beautiful_mind]
+puts movies[:the_evil_dead]
+
+#use data from the previous example and store them in an array 
+dates = [1975, 2004, 2013, 2001, 1981]
+
+puts dates[0]
+puts dates[1]
+puts dates[2]
+puts dates[3]
+puts dates[4]
